@@ -1,0 +1,32 @@
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #f5fcfc;
+  padding: 24px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 64px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1f2937;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
